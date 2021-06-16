@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+void print (int n)
+{
+    if(n<0)
+    {
+        return;
+    }
+    if(n==0)
+    {
+        return;
+    }
+    
+    print(--n);
+    cout << n << " ";
+}
+
+int main()
+{
+    int i;
+    cin >> i;
+    print(++i);
+}
