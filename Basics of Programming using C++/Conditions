@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+
+void
+displayMessage ()
+{
+  cout << "Enter the number to be checked" << endl;
+}
+
+int
+takeInput ()
+{
+  float enValue;
+  cin >> enValue;
+  return enValue;
+}
+
+void
+performCalculation(int enValue1)
+{
+    if (enValue1 <= 4.2)
+    {
+      cout << "Condition1 is True" << endl;
+    }
+  else if (enValue1 <= 4.4)
+    {
+      cout << "Condition2 is True" << endl;
+    }
+  else if (enValue1 <= 4.6)
+    {
+      cout << "Condtion3 is True" << endl;
+    }
+  else if (enValue1 <= 4.8)
+    {
+      cout << "Condition4 is True" << endl;
+    }
+  else if (enValue1 <= 5.0)
+    {
+      cout << "Condition5 is True" << endl;
+    }
+  else
+    {
+      cout << "Invalid Input. Please enter values between 4 and 5. " << endl;
+    }
+
+  bool subcondition1 = (enValue1 <= 4.5 && enValue1 >= 4.2);
+  bool subcondition2 = (enValue1 <= 5.0 && enValue1 >= 4.7);
+
+  if (subcondition1 || subcondition2)
+    {
+      cout << "Condition6 is True" << endl;
+    }
+
+}
+int
+main ()
+{
+  displayMessage();
+  takeInput();
+  int enValue2 = takeInput();
+  performCalculation(enValue2);
+}
