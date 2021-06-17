@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    
+    string pass = "uF6aJ5zR8oT3oJ0c";
+    
+    string enValue;
+    
+    do
+    {
+         cout << "Please enter your password > ";
+         cin >> enValue;
+         
+         if(enValue != pass)
+         {
+            cout << "Access Denied. ";
+         }
+         
+    }
+    
+    while (enValue != pass) ;
+    {
+        cout << "Password Accepted." << flush;
+    }
+    
+    return 0;
+}
+
